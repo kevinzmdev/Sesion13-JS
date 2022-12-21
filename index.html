@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASINCRONA 13-JS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body>
+    
+<div ng-app="myApp" ng-controller="myCtrl">
+    <h1>EMPRESA "MULTIPLAN"</h1>
+    <h3>Factura de Alquiler </h3>
+    <p>Distancia: <input type="number" ng-model="distancia"></p>
+    <p>Km: {{distancia}}</p>
+    <p>Tarifa: {{calcularTarifa()}}</p>
+    <p>Descuento: S/. {{calcularDescuento()}}</p>
+    <p>Total a Pagar: S/. {{Pago()}}</p>
+
+</div>
+<script src="script13.js"></script>
+
+
+</body>
+</html>
